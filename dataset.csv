@@ -1,5 +1,5 @@
 stock_name,pc_2014,pc_2015,pc_2016,pc_2017,pc_2018,pc_2019,pc_2020,pc_2021,pc_2022,pc_2023,row,col,full_name,market_cap,weighting,sector
-MSF,24.16,19.44,12,37.66,18.74,55.26,41.04,51.21,-28.69,56.8,A,1, Microsoft Corporation, 3011.52B, 6.83%, Technology
+MSFT,24.16,19.44,12,37.66,18.74,55.26,41.04,51.21,-28.69,56.8,A,1, Microsoft Corporation, 3011.52B, 6.83%, Technology
 AAPL,37.72,-4.64,10.03,46.11,-6.79,86.16,80.75,33.82,-26.83,48.18,A,2, Apple Inc, 2580.57B, 3.04%, Technology
 AMZN,-22.18,117.78,10.95,55.96,28.43,23.03,76.26,2.38,-49.62,80.88,A,3, Amazon.com Inc., 1864.07B, 2.93%, Consumer Discretionary
 V,17.75,18.31,0.61,46.14,15.72,42.41,16.41,-0.92,-4.13,25.31,A,4, Visa Inc., 544.41B, 4.76%, Financials
