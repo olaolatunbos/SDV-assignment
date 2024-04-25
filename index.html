@@ -38,12 +38,21 @@
         height = 600 - margin.top - margin.bottom;
 
     const svg = d3.select("#my_dataviz")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", `translate(${margin.left}, ${margin.top})`);
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+    const tooltip = d3.select("#my_dataviz")
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
     function update(selectedVar) {
         d3.csv('https://raw.githubusercontent.com/olaolatunbos/Robustness-of-BERT-and-roBERTa-fine-tuned-for-argument-mining/main/stocks.csv').then(function (data) {
 
@@ -72,15 +81,7 @@
 
             const myColor = d3.scaleThreshold([-20, -7, 0, 15, 40, 60], ["#F33644", "#B32833", "#81262E", "#1A3327", "#006639", "#009955"]);
 
-            const tooltip = d3.select("#my_dataviz")
-                .append("div")
-                .style("opacity", 0)
-                .attr("class", "tooltip")
-                .style("background-color", "white")
-                .style("border", "solid")
-                .style("border-width", "2px")
-                .style("border-radius", "5px")
-                .style("padding", "5px")
+        
 
             const mouseover = function (event, d) {
                 tooltip
