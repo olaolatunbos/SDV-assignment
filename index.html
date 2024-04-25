@@ -54,7 +54,7 @@
             .style("border-radius", "5px")
             .style("padding", "5px")
     function update(selectedVar) {
-        d3.csv('https://raw.githubusercontent.com/olaolatunbos/Robustness-of-BERT-and-roBERTa-fine-tuned-for-argument-mining/main/stocks.csv').then(function (data) {
+        d3.csv('https://raw.githubusercontent.com/olaolatunbos/SDV-assignment/main/dataset.csv').then(function (data) {
 
             const myGroups = Array.from(new Set(data.map(d => d.row)))
             const myVars = Array.from(new Set(data.map(d => d.col)))
